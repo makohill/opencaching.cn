@@ -1,0 +1,255 @@
+2016-06-02 09:11:28.000000 [10.10.0.101] SQL error
+
+Array
+(
+    [0] => Array
+        (
+            [file] => /var/www/html/htdocs/lib2/db.inc.php
+            [line] => 790
+            [function] => sql_error
+            [args] => Array
+                (
+                )
+
+        )
+
+    [1] => Array
+        (
+            [file] => /var/www/html/htdocs/lib2/db.inc.php
+            [line] => 112
+            [function] => sql_connect
+            [args] => Array
+                (
+                )
+
+        )
+
+    [2] => Array
+        (
+            [file] => /var/www/html/htdocs/lib2/logic/labels.inc.php
+            [line] => 40
+            [function] => sql
+            [args] => Array
+                (
+                    [0] => SELECT
+                 `cache_attrib`.`id`,
+                 IFNULL(`sys_trans_text`.`text`,
+                 `cache_attrib`.`name`) AS `name`
+             FROM `cache_attrib`
+             LEFT JOIN `sys_trans`
+                 ON `cache_attrib`.`trans_id`=`sys_trans`.`id`
+                 AND `cache_attrib`.`name`=`sys_trans`.`text`
+             LEFT JOIN `sys_trans_text`
+                 ON `sys_trans`.`id`=`sys_trans_text`.`trans_id`
+                 AND `sys_trans_text`.`lang`='&1'
+                    [1] => DE
+                )
+
+        )
+
+    [3] => Array
+        (
+            [file] => /var/www/html/htdocs/lib2/logic/labels.inc.php
+            [line] => 10
+            [function] => CreateCacheFile
+            [class] => labels
+            [type] => ::
+            [args] => Array
+                (
+                )
+
+        )
+
+    [4] => Array
+        (
+            [file] => /var/www/html/htdocs/lib2/OcSmarty.class.php
+            [line] => 12
+            [args] => Array
+                (
+                    [0] => /var/www/html/htdocs/lib2/logic/labels.inc.php
+                )
+
+            [function] => require_once
+        )
+
+    [5] => Array
+        (
+            [file] => /var/www/html/htdocs/lib2/common.inc.php
+            [line] => 101
+            [args] => Array
+                (
+                    [0] => /var/www/html/htdocs/lib2/OcSmarty.class.php
+                )
+
+            [function] => require
+        )
+
+    [6] => Array
+        (
+            [file] => /var/www/html/htdocs/lib2/web.inc.php
+            [line] => 28
+            [args] => Array
+                (
+                    [0] => /var/www/html/htdocs/lib2/common.inc.php
+                )
+
+            [function] => require_once
+        )
+
+    [7] => Array
+        (
+            [file] => /var/www/html/htdocs/index.php
+            [line] => 8
+            [args] => Array
+                (
+                    [0] => /var/www/html/htdocs/lib2/web.inc.php
+                )
+
+            [function] => require
+        )
+
+)
+
+-------------------------------------------------------------------------
+
+2016-06-02 09:17:16.000000 [10.10.0.101] SQL error
+Table 'opencaching.sys_menu' doesn't exist
+
+SQL statement: SELECT `id`, `id_string` FROM `sys_menu`
+Array
+(
+    [0] => Array
+        (
+            [file] => /var/www/html/htdocs/lib2/db.inc.php
+            [line] => 328
+            [function] => sql_error
+            [args] => Array
+                (
+                    [0] => SELECT `id`, `id_string` FROM `sys_menu`
+                )
+
+        )
+
+    [1] => Array
+        (
+            [file] => /var/www/html/htdocs/lib2/db.inc.php
+            [line] => 129
+            [function] => sql_internal
+            [args] => Array
+                (
+                    [0] => Resource id #43
+                    [1] => SELECT `id`, `id_string` FROM `sys_menu`
+                    [2] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+    [2] => Array
+        (
+            [file] => /var/www/html/htdocs/lib2/db.inc.php
+            [line] => 351
+            [function] => sql
+            [args] => Array
+                (
+                    [0] => SELECT `id`, `id_string` FROM `sys_menu`
+                    [1] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+    [3] => Array
+        (
+            [file] => /var/www/html/htdocs/lib2/menu.class.php
+            [line] => 91
+            [function] => sqlf
+            [args] => Array
+                (
+                    [0] => SELECT `id`, `id_string` FROM `sys_menu`
+                )
+
+        )
+
+    [4] => Array
+        (
+            [file] => /var/www/html/htdocs/lib2/menu.class.php
+            [line] => 28
+            [function] => CreateCacheFile
+            [class] => Menu
+            [object] => Menu Object
+                (
+                    [nSelectedItem] => 0
+                    [sMenuFilename] => ./cache2/menu-DE.inc.php
+                )
+
+            [type] => ->
+            [args] => Array
+                (
+                )
+
+        )
+
+    [5] => Array
+        (
+            [file] => /var/www/html/htdocs/lib2/menu.class.php
+            [line] => 14
+            [function] => __construct
+            [class] => Menu
+            [object] => Menu Object
+                (
+                    [nSelectedItem] => 0
+                    [sMenuFilename] => ./cache2/menu-DE.inc.php
+                )
+
+            [type] => ->
+            [args] => Array
+                (
+                )
+
+        )
+
+    [6] => Array
+        (
+            [file] => /var/www/html/htdocs/lib2/common.inc.php
+            [line] => 110
+            [args] => Array
+                (
+                    [0] => /var/www/html/htdocs/lib2/menu.class.php
+                )
+
+            [function] => require_once
+        )
+
+    [7] => Array
+        (
+            [file] => /var/www/html/htdocs/lib2/web.inc.php
+            [line] => 28
+            [args] => Array
+                (
+                    [0] => /var/www/html/htdocs/lib2/common.inc.php
+                )
+
+            [function] => require_once
+        )
+
+    [8] => Array
+        (
+            [file] => /var/www/html/htdocs/index.php
+            [line] => 8
+            [args] => Array
+                (
+                    [0] => /var/www/html/htdocs/lib2/web.inc.php
+                )
+
+            [function] => require
+        )
+
+)
+
+-------------------------------------------------------------------------
+

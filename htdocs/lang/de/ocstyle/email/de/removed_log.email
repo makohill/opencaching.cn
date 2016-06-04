@@ -1,0 +1,25 @@
+Hallo %log_owner%,
+
+%cache_owner% hat deinen Logeintrag für den Cache "%cache_name%" gelöscht
+({shortlink_url}%cache_wp%).
+
+%log_date%: %log_type%
+
+Gelöschter Text:
+---
+%log_text%
+---
+
+%comment%
+
+
+Du kannst %cache_owner% über folgenden Link kontaktieren:
+{site_url}mailto.php?userid=%cache_owner_id%
+
+
+---
+Diese E-Mail wurde automatisch generiert - bitte nicht antworten. Falls du
+Kontakt mit Opencaching.de aufnehmen möchtest, kannst unter
+{site_url}articles.php?page=contact alle Möglichkeiten
+nachlesen. In dringenden Fällen kannst du die E-Mail-Adresse
+{email_contact} verwenden.

@@ -1,0 +1,25 @@
+Hello {username},
+
+a new {oconly-}cache has just been published in your search radius:
+
+---
+{user} has hidden the cache "{cachename}" on {date}.
+Distance: {distance} {unit} to the {bearing}
+Type: {cachetype}
+Size: {cachesize}
+
+Link: {shortlink_url}{wp_oc}
+---
+
+
+You can view and change the settings for your search radius at
+{site_url}myprofile.php.
+
+Happy Geocaching,
+the Opencaching.de Team
+
+---
+This E-Mail was generated automatically - please do not answer. If you would
+like to contact Opencaching.de, please refer to 
+{site_url}articles.php?page=contact. In urgent cases you
+may send an e-mail to {email_contact}.
